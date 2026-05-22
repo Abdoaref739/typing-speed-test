@@ -70,9 +70,9 @@ body{
 }
 #words-text{
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
-    color: white;
+    color: rgb(180, 180, 180);
 }
 .styled-text{
     color: rgb(224, 191, 0);
@@ -316,4 +316,48 @@ color: gold;
     background-color: #0a0e27;
     color: #4e8cff;
     border-color: #c8d6ff;
+}
+@media screen and (max-width: 600px){
+    .welcome-main-div{
+        position: absolute;
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .main-text{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+
+    }
+    #welcome-text{
+        margin-left: 20px;
+    }
+    #gear-icon{
+        font-size: 20px;
+        margin-left: 450px;
+        margin-top: 40px;
+    }
+    #profile-icon{
+        font-size: 20px;
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+    #time-based-test-button{
+        width: 100px;
+        font-size: 15px;
+    }
+    #restart-button{
+        margin-top: 100px;
+    }
+    #github-button{
+        margin-top: 200px;
+    }
+    #buy-me-a-coffee-button{
+        margin-top: 150px;
+    }
+    .footer-text{
+        margin-left: -280px;
+        margin-top: 220px;
+    }
 }
