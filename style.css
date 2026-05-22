@@ -317,7 +317,7 @@ color: gold;
     color: #4e8cff;
     border-color: #c8d6ff;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 980px){
     .welcome-main-div{
         position: absolute;
         width: 280px;
