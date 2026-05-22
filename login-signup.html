@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user profile</title>
+    <link rel="stylesheet" href="login-signup.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="circle1" id="circle"></div>
+    <div class="circle2" id="circle"></div>
+    <div class="upper-page-div">
+        <h1 class="main-text">Sign in / Create new account!</h1>
+    </div>
+    <div class="middle-page-div">
+            <div class="register-box">
+                <input type="email" id="name-field-register" placeholder="enter your name">
+                <input type="text" id="email-verification" placeholder="enter your email">
+
+                <input type="password" id="password-field-register" placeholder="enter your password">
+                <input type="password" id="repeat-password-field" placeholder="repeat the password">
+                <input type="checkbox" id="remember-me-checkbox"> <span class="remember-me-span">remember me</span>
+                <button id="signin-button" class="register-button">register</button>
+            </div>
+            <div class="login-box">
+                <input type="email" id="email-field-login" placeholder="enter your email">
+                <input type="password" id="password-field-login" placeholder="enter your password">
+                <input type="checkbox" id="remember-me-checkbox"> <span class="remember-me-span">remember me</span>
+                <button id="signin-button" class="login-button"><i class="fa-solid"></i>log in</button>
+            </div>
+            <div id="login-register-div">
+                <button id="register-choice">register</button>
+                <button id="login-choice">login</button>
+            </div>
+    </div>
+    <div class="lower-page-div">
+            <span class="footer-text">A website made by: @Aref - 2026 &copy;copyright all rights reserved!</span>
+    </div>
+    <script src="login-signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</body>
+</html>

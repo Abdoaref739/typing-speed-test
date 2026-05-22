@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(22, 22, 22);
+}
+#arrow-back-icon{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.profile-upper-page-div{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(15, 15, 15);
+    width: 85%;
+    height: 150px;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-left: 6%;
+}
+#profile-image{
+    width: auto;
+    height: 100px;
+    border: 2px solid gold;
+    border-radius: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.profile-username{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: white;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.profile-middle-page-div{
+    background-color: rgb(15, 15, 15);
+    width: 85%;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 6%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.profile-lower-page-div{
+    background-color: rgb(15, 15, 15);
+    width: 85%;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 6%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.profile-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    margin-top: 100px;
+}

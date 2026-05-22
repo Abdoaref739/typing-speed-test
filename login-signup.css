@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(22, 22, 22);
+    overflow:hidden;
+}
+#circle{
+    position: absolute;
+    z-index: -1;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 200px;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+.circle1{
+    margin-left: 100px;
+}
+.circle2{
+    margin-top: 30%;
+    margin-left: 80%;
+}
+.upper-page-div{
+    width: 100%;
+    height: 15%;
+}
+.middle-page-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+
+}
+.lower-page-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+.main-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin-top: 4%;
+    margin-left: 6%;
+    color: white;
+}
+.register-box{
+    width: 25%;
+    height: 60%;
+}
+.login-box{
+    display: none;
+    width: 25%;
+    height: 60%;
+    margin-top: 80px;
+}
+#name-field-register{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    color: gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+    border-color: transparent;
+}
+#email-verification{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border-color: transparent;
+    color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#password-field-register{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border-color: transparent;
+    color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#repeat-password-field{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border-color: transparent;
+    color: gray;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#signin-button{
+    width: 34%;
+    height: 53px;
+    background-color: transparent;
+    border-color: transparent;
+    color: whitesmoke;
+    margin-top: 30px;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 130px;
+
+}
+#signin-button:hover{
+    color: gold;
+    transition: 0.7s ease;
+}
+.remember-me-span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
+    color: white;
+}
+#remember-me-checkbox{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid gold;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#remember-me-checkbox:checked{
+    background-color: gold;
+}
+#login-register-div{
+    width: 15%;
+    height: 150px;
+    margin-left: 10%;
+}
+#register-choice{
+    width: 100%;
+    height: 40%;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    cursor: pointer;
+}
+#register-choice:hover{
+background-color: rgba(255, 255, 255, 0.103);
+transition: 0.7s ease;
+}
+#login-choice{
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#login-choice:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+    transition: 0.7s ease-in;
+}
+#email-field-login{
+width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border-color: transparent;
+    color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#password-field-login{
+width: 100%;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border-color: transparent;
+    color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.footer-text{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-top: 80px;
+    color: white;
+}
