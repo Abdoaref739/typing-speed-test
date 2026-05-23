@@ -142,7 +142,7 @@ body{
     color: gold;
 }
 #restart-button{
-    width: 140px;
+    width: 280px;
     height: 30px;
     background-color: transparent;
     border: 1px solid transparent;
@@ -317,7 +317,7 @@ color: gold;
     color: #4e8cff;
     border-color: #c8d6ff;
 }
-@media screen and (max-width: 980px){
+@media screen and (max-width: 960px){
     .welcome-main-div{
         position: absolute;
         width: 280px;
@@ -358,6 +358,7 @@ color: gold;
     }
     #words-text{
         font-size: 30px;
+    }
     .footer-text{
         margin-left: -280px;
         margin-top: 220px;

@@ -37,6 +37,9 @@ body{
     margin-left: 80px;
 }
 .profile-middle-page-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(15, 15, 15);
     width: 85%;
     height: 350px;

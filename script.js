@@ -108,9 +108,7 @@ profileButton.addEventListener("click", function(){
 githubButton.addEventListener("click", function(){
     window.open("https://github.com/Abdoaref739", "_blank");
 })
-restartButton.addEventListener("click", function(){
-    window.location.reload();
-})
+
 var wordsWritten;
 var timeCounted;
 let resultsDiv = document.getElementById("results-div");
@@ -183,6 +181,10 @@ profileChoices.addEventListener("click", function(){
 window.location.href = "profile.html";
 });
 
+
+
+
+
 let themeOption1 = document.getElementById("theme-option1");
 let themeOption2 = document.getElementById("theme-option2");
 let themeOption3 = document.getElementById("theme-option3");
@@ -192,57 +194,132 @@ let themeOption1_icon = document.getElementById("theme-option1-check");
 let themeOption2_icon = document.getElementById("theme-option2-check");
 let themeOption3_icon = document.getElementById("theme-option3-check");
 let themeOption4_icon = document.getElementById("theme-option4-check");
-let themeOption1_checked = true;
-let themeOption2_checked = false;
-let themeOption3_checked = false;
-let themeOption4_checked = false;
-themeOption1.addEventListener("click", function(){
-    themeOption1_checked = true;
-    if(themeOption1_checked === true){
+let timeBasedTestButton = document.getElementById("time-based-test-button");
+themeOption1_icon.style.display = "block";
+
+function theme1(){
+localStorage.setItem("theme", "first-theme");
         themeOption1_icon.style.display = "block";
+        themeOption2_icon.style.display = "none";
+        themeOption3_icon.style.display = "none";
+        themeOption4_icon.style.display = "none";
         document.body.style.backgroundColor = "rgb(22, 22, 22)";
         styledText.style.color = "#ffd700";
-        console.log("done")
-    }else{
-        themeOption1_icon.style.display = "none";
-    }
+        timeBasedTestButton.addEventListener("mouseover", function(){
+            timeBasedTestButton.style.color = "#ffd700";
+        })
+        timeBasedTestButton.addEventListener("mouseout", function(){
+            timeBasedTestButton.style.color = "#fff";
+        });
+        restartButton.addEventListener("mouseover", function(){
+            restartButton.style.color = "#ffd700";
+        });
+        restartButton.addEventListener("mouseout", function(){
+            restartButton.style.color = "#fff";
+        });
+}
+themeOption1.addEventListener("click", function(){
+        theme1();
+        
 });
-themeOption2.addEventListener("click", function(){
-    themeOption2_checked = true;
-    themeOption1_checked = false;
-        themeOption3_checked = false;
-        themeOption4_checked = false;
-    if(themeOption2_checked === true){
+
+function theme2(){
+        localStorage.setItem("theme", "second-theme");
+        themeOption1_icon.style.display = "none";
         themeOption2_icon.style.display = "block";
-        document.body.style.backgroundColor = "rgb(22, 22, 22)";
-        styledText.style.color = "#ffd700";
-    }else{
-        themeOption1_icon.style.display = "none";
-    }
+        themeOption3_icon.style.display = "none";
+        themeOption4_icon.style.display = "none";
+        document.body.style.backgroundColor = "#0f1117";
+        styledText.style.color = "#00ff88";
+        console.log("done")
+        timeBasedTestButton.addEventListener("mouseover", function(){
+            timeBasedTestButton.style.color = "#00ff88";
+        })
+        timeBasedTestButton.addEventListener("mouseout", function(){
+            timeBasedTestButton.style.color = "#fff";
+        });
+        restartButton.addEventListener("mouseover", function(){
+            restartButton.style.color = "#00ff88";
+        });
+        restartButton.addEventListener("mouseout", function(){
+            restartButton.style.color = "#fff";
+        });
+}
+
+themeOption2.addEventListener("click", function(){
+        theme2();
 });
-themeOption3.addEventListener("click", function(){
-    themeOption1_checked = false;
-    themeOption2_checked = false;
-    themeOption3_checked = true;
-    themeOption4_checked = false;
-    if(themeOption3_checked === true){
+
+function theme3(){
+        localStorage.setItem("theme", "third-theme");
+        themeOption1_icon.style.display = "none";
+        themeOption2_icon.style.display = "none";
         themeOption3_icon.style.display = "block";
-        document.body.style.backgroundColor = "rgb(22, 22, 22)";
-        styledText.style.color = "#ffd700";
-    }else{
-        themeOption1_icon.style.display = "none";
-    }
+        themeOption4_icon.style.display = "none";
+        document.body.style.backgroundColor = "#f5f0e8";
+        styledText.style.color = "#a0522d";
+        console.log("done")
+        timeBasedTestButton.addEventListener("mouseover", function(){
+            timeBasedTestButton.style.color = "#a0522d";
+        })
+        timeBasedTestButton.addEventListener("mouseout", function(){
+            timeBasedTestButton.style.color = "#fff";
+        });
+        restartButton.addEventListener("mouseover", function(){
+            restartButton.style.color = "#a0522d";
+        });
+        restartButton.addEventListener("mouseout", function(){
+            restartButton.style.color = "#fff";
+        });
+}
+
+themeOption3.addEventListener("click", function(){
+        theme3();
 });
-themeOption4.addEventListener("click", function(){
-    themeOption1_checked = false;
-    themeOption2_checked = false;
-    themeOption3_checked = false;
-    themeOption4_checked = true;
-    if(themeOption4_checked === true){
-        themeOption4_icon.style.display = "block";
-        document.body.style.backgroundColor = "rgb(22, 22, 22)";
-        styledText.style.color = "#ffd700";
-    }else{
+
+function theme4(){
+        localStorage.setItem("theme", "forth-theme");
         themeOption1_icon.style.display = "none";
+        themeOption2_icon.style.display = "none";
+        themeOption3_icon.style.display = "none";
+        themeOption4_icon.style.display = "block";
+        document.body.style.backgroundColor = "#0a0e27";
+        styledText.style.color = "#4e8cff";
+        console.log("done")
+        timeBasedTestButton.addEventListener("mouseover", function(){
+            timeBasedTestButton.style.color = "#4e8cff";
+        })
+        timeBasedTestButton.addEventListener("mouseout", function(){
+            timeBasedTestButton.style.color = "#fff";
+        });
+        restartButton.addEventListener("mouseover", function(){
+            restartButton.style.color = "#4e8cff";
+        });
+        restartButton.addEventListener("mouseout", function(){
+            restartButton.style.color = "#fff";
+        });
+}
+
+themeOption4.addEventListener("click", function(){
+        theme4();
+});
+function themeRestart(){
+    window.location.reload();
+    if(localStorage.getItem("theme") == "first-theme"){
+        theme1();
+    }else if(localStorage.getItem("theme") == "second-theme"){
+        theme2();
+    }else if(localStorage.getItem("theme") == "third-theme"){
+        theme3();
+    }else if(localStorage.getItem("theme") == "forth-theme"){
+        theme4();
     }
+
+}
+restartButton.addEventListener("click", themeRestart);
+document.addEventListener("keydown", function(event){
+if(event.shiftKey && event.key === "Enter"){
+    themeRestart();
+    window.location.reload();
+}
 });
